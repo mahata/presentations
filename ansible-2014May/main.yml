@@ -1,0 +1,21 @@
+---
+- hosts: default
+  user: vagrant
+  sudo: true
+  tasks:
+    - name: Hello, world!
+      debug: msg="Hello, world!"
+
+    - name: Lets Assume that this task is very slow!
+      shell: sleep 3
+
+    - name: Done - provisioning
+      local_action: shell [ -x /usr/local/bin/terminal-notifier ] && /usr/local/bin/terminal-notifier -message "{{inventory_hostname}}, All good! :)"
+      sudo: False
+
+    - name: ""
+      local_action: osx_say
+                    msg="That was easy"
+                    voice=Bruce # or Hysterical
+      sudo: False
+
