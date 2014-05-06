@@ -28,7 +28,7 @@ $ terminal-notifier -message "Hello, world!"
       local_action: shell /usr/local/bin/terminal-notifier -message "All good! :)"
 ```
 
-# Cool! But what if I don't miss the notification?
+# Cool! But what if I miss the notification?
 
 * Let's try [osx_say](http://docs.ansible.com/osx_say_module.html) then!
 
