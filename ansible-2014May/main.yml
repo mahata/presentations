@@ -6,7 +6,7 @@
     - name: Hello, world!
       debug: msg="Hello, world!"
 
-    - name: Lets Assume that this task is very slow!
+    - name: Lets assume that this task is very slow!
       shell: sleep 3
 
     - name: Done - provisioning
