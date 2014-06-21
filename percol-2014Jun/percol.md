@@ -21,22 +21,70 @@ percol adds flavor of interactive selection to the traditional pipe concept on U
 ## How helm.el works
 
 1. Collect data
-2. Filter it incrementally
-3. Choose something from it
+2. Filter it
+3. Select something
 4. Make an action toward it
 
 # percol
 
 ## How percol works
 
-* Gather data (which can be handled from shell)
-* Filter it incrementally
-* Redirect or pipe filtered data
-* Make an action
+* Collect data (especially from shell)
+* Filter it
+* Redirect or pipe it
 
-# percol example
+# easy percol examples
 
-* ToDo
+```
+$ percol /PATH/TO/LOGFILE
+$ ls -al /PATH/TO/SOMEWHERE | percol
+$ ps aux | percol
+````
+
+# aliase with pipe (ZSH) works!
+
+Add following line to `.zshrc`:
+
+```
+alias -g P="| percol --match-method regex"
+```
+
+Try followings then:
+
+```
+$ ls -al /PATH/TO/SOMEWHERE P
+$ ps aux P
+```
+
+# advanced percol examples (history search)
+
+Put followings gist to `~/.zshrc` and try `C-r`:
+
+* [https://gist.github.com/mahata/459717b8e27b8445b04a](https://gist.github.com/mahata/459717b8e27b8445b04a)
+
+# advanced percol examples (pgrep / pkill)
+
+```
+$ ps aux | percol | awk '{ print $2 }'
+$ ps aux | percol | awk '{ print $2 }' | xargs kill
+```
+
+Use `C-space` to choose multiple items.
+
+# How to install percol
+
+## EASY!!
+
+```
+$ pip install percol
+```
+
+# Competitors
+
+* [zaw](https://github.com/zsh-users/zaw)
+* [canything](https://github.com/keiji0/canything)
+* [peco](https://github.com/peco/peco)
+* [fzf](https://github.com/junegunn/fzf)
 
 # Appendix
 
