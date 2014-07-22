@@ -12,11 +12,11 @@ rlwrap - A tool to `GNU readline-ize` programs
 # Bad
 
 * perl
-* ruby - (it's not fair...)
-* clj
+* ruby - it's not fair...
+* clj - it's not fair...
 * ocaml
 * rhino
-* guile
+* guile / gosh - Scheme interpreter
 
 # We need nicer REPL!
 
