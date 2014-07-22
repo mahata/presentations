@@ -1,30 +1,26 @@
-# _
+# rlwrap
 
 rlwrap - A tool to `GNU readline-ize` programs
 
-# _
+# Good
 
-REPL
-
-# _
-
-* ruby
-* irb
 * python
-* php -a
-* guile
-* mysql
-* mongo
-* ocaml
-* scala (rlwrap -pRED -A scala -Xnojline)
-* clj
-* node
-* rhino
+* scala
 * erl
+* node
 
-# _
+# Bad
 
-Beauty of PHP
+* perl
+* ruby - (it's not fair...)
+* clj
+* ocaml
+* rhino
+* guile
+
+# We need nicer REPL!
+
+# Beauty of PHP
 
 * implode()
 * explode()
