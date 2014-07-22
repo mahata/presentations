@@ -20,31 +20,24 @@ rlwrap - A tool to `GNU readline-ize` programs
 
 # We need nicer REPL!
 
-# Beauty of PHP
-
-* implode()
-* explode()
-* array_map()
-* array_reduce()
-
-# _
-
-~/.PROGRAM_history
+* REPL should work with ALT and CTRL
+* REPL should emphasize parenthesis
+* REPL should log lines
+    * `~/.PROGRAM_history`
 
 # _
 
 * Coloring
 * Auto-complete
 
-# _
+# ~/.zshrc
 
-* Matching parenthesis
-
-# _
-
-alias mysql='rlwrap mysql'
-alias ruby='rlwrap ruby
-alias guile='rlwrap guile'
+```
+alias ruby='rlwrap ruby'
+alias python='rlwrap python'
+...
+alias clj='rlwrap clj'
+```
 
 # Install
 
