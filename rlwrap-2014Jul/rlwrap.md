@@ -25,11 +25,6 @@ rlwrap - A tool to `GNU readline-ize` programs
 * REPL should log lines
     * `~/.PROGRAM_history`
 
-# _
-
-* Coloring
-* Auto-complete
-
 # ~/.zshrc
 
 ```
