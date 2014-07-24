@@ -12,24 +12,32 @@ rlwrap - A tool to `GNU readline-ize` programs
 # Bad
 
 * perl
-* ruby - it's not fair...
-* clj - it's not fair...
+* ruby
+* clj
 * ocaml
 * rhino
-* guile / gosh - Scheme interpreter
+* guile / gosh
+
+# Reason?
+
 
 # We need nicer REPL!
 
 * REPL should work with ALT and CTRL
-* REPL should emphasize parenthesis
-* REPL should log lines
+* REPL should emphasize matching parenthesis
+* REPL should store log lines
     * `~/.PROGRAM_history`
+
+# DEMO
+
+* RLWRAP
 
 # ~/.zshrc
 
 ```
+alias perl='rlwrap perl'
 alias ruby='rlwrap ruby'
-alias python='rlwrap python'
+alias rhino='rlwrap rhino'
 ...
 alias clj='rlwrap clj'
 ```
